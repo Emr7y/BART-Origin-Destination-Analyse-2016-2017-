@@ -1,6 +1,16 @@
 # 🚇 BART Origin–Destination Analyse (2016–2017)
 
-Kurze, saubere Auswertung der BART-Fahrten **Origin → Destination** mit angereicherten Stationsdaten.
+Dieses Repo enthält eine kompakte, reproduzierbare Analyse der BART‑Fahrten 2016–2017. Wir verknüpfen die Trip‑Tabelle (Origin/Destination, Throughput, DateTime) mit der Stationstabelle (Abkürzung, Name, Koordinaten), normalisieren Codes und beheben historische Alias‑Abweichungen (z. B. WSPR → WARM).
+
+Auf Basis der vom Datensatz gelieferten Zählgröße Throughput (Anzahl pro Zeitintervall, wie bereitgestellt) aggregieren wir:
+
+Top‑Routen (gesamt oder durchschnittlich pro Tag),
+
+Tageszeit‑Muster (Ø Trips pro Stunde),
+
+Wochentags‑Muster (Ø Trips pro Wochentag).
+
+Der Fokus liegt auf klaren, wenigen Visualisierungen und exportierbaren Tabellen – ideal für eine kurze Ergebnispräsentation ohne langatmige EDA im README (die ausführliche Exploration findet im Notebook statt).
 
 ## 🎯 Ziele
 
